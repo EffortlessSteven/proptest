@@ -10,7 +10,7 @@ documentation = "https://docs.rs/proptest/latest/proptest/"
 keywords = ["property", "testing", "quickcheck", "fuzz", "hypothesis"]
 categories = ["development-tools::testing"]
 edition = "2021"
-rust-version = "1.85"
+rust-version = "1.86"
 exclude = ["/gen-*.sh", "/readme-*.md"]
 
 description = """
@@ -32,7 +32,7 @@ unstable = ["f16"]
 f16 = []
 
 # Enables the use of standard-library dependent features
-std = ["rand/std", "rand/os_rng", "regex-syntax", "num-traits/std"]
+std = ["rand/std", "rand/sys_rng", "regex-syntax", "num-traits/std"]
 
 # std or libm required for mul_add.
 no_std = ["num-traits/libm"]
